@@ -2,26 +2,30 @@
 
 本プロジェクトでは、保守性と拡張性を高めるため、標準的な MVC (Model-View-Controller) パターンを採用します。
 
-## 1. パッケージ構造
-推奨されるパッケージ構造は以下の通りです。
+## 1. ディレクトリ・パッケージ構造
+標準的な Maven 構造および JavaFX のモジュール・システム（JPMS）に準拠した構成を推奨します。
 
 ```
-com.example.puzzle
-├── Main.java             # エントリーポイント
-├── model                 # ビジネスロジックとデータ構造
-│   ├── PuzzleBoard.java  # 盤面の状態管理
-│   ├── Tile.java         # 各パネルのデータ
-│   └── GameState.java    # ゲームの進行状態 (PLAYING, SOLVED 等)
-├── view                  # ユーザーインターフェース (JavaFX)
-│   ├── MainView.java     # メイン画面のレイアウト
-│   └── TileView.java     # 各パネルの描画
-├── controller            # ユーザー入力の制御
-│   └── GameController.java
-├── service               # 補助的な機能
-│   ├── ImageService.java # 画像の読み込み・加工
-│   └── ShuffleService.java # シャッフルアルゴリズム
-└── util                  # 共通ユーティリティ
-    └── SolvabilityChecker.java
+.
+├── pom.xml                # プロジェクト構成 (Maven)
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   ├── module-info.java  # モジュール定義
+│   │   │   └── com.example.puzzle
+│   │   │       ├── Main.java     # エントリーポイント
+│   │   │       ├── model/        # ビジネスロジック
+│   │   │       ├── view/         # JavaFX UI コンポーネント
+│   │   │       ├── controller/   # ユーザー入力制御
+│   │   │       ├── service/      # 画像処理・アルゴリズム
+│   │   │       └── util/         # ユーティリティ
+│   │   └── resources
+│   │       └── com.example.puzzle
+│   │           ├── images/       # アイコン・デフォルト画像
+│   │           └── css/          # スタイルシート
+│   └── test
+│       └── java
+│           └── com.example.puzzle # ユニットテスト
 ```
 
 ## 2. 主要クラスの責務

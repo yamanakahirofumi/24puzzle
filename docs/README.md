@@ -4,8 +4,11 @@
 
 ## 機能・仕様
 - [ゲームルール](features/Game-Rule.md): 24-Puzzle の遊び方、操作方法、勝利条件について
+- [UI/UX 仕様](features/UI-UX-Specification.md): 画面構成とユーザーインターフェースの詳細
 
 ## 技術・開発設定
+- [アーキテクチャ設計](tech/Architecture.md): システムのパッケージ構造と主要クラスの責務
+- [実装詳細](tech/Implementation-Details.md): シャッフルアルゴリズム、画像処理、ロギング等の詳細
 - [技術スタック](tech/Tech-Stack.md): 使用している言語、ライブラリ、ツールなどの情報
 - [CI 設定](tech/CI-Setting.md): GitHub Actions を利用した自動ビルドとテストの設定について
 - [テストルール](tech/Test-Rule.md): テストケース作成の一般的なガイドライン

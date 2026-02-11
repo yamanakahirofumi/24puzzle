@@ -12,7 +12,5 @@
 - **軽量化**: フルセットの JDK/JRE ではなく、必要なモジュールのみを抽出するため、配布サイズを抑制できます。
 
 ## 関連ツール
-- [jlink](https://docs.oracle.com/en/java/javase/): カスタム・ランタイム・イメージの作成
-- [jpackage](https://docs.oracle.com/en/java/javase/): 自己完結型アプリケーション・パッケージの作成
-
-※ 各ツールの詳細な仕様については、[技術スタック](Tech-Stack.md) で規定されたバージョンの公式ドキュメントを参照してください。
+- [jlink](https://docs.oracle.com/en/java/javase/21/docs/specs/man/jlink.html): カスタム・ランタイム・イメージの作成
+- [jpackage](https://docs.oracle.com/en/java/javase/21/docs/specs/man/jpackage.html): 自己完結型アプリケーション・パッケージの作成

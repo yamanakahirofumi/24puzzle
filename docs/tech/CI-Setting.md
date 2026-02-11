@@ -33,7 +33,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
-        java-version: '21'
+        java-version: '<VERSION>' # バージョン詳細は Tech-Stack.md を参照
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven

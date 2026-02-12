@@ -43,6 +43,7 @@ JavaFX の `PixelReader` と `WritableImage` を使用して、25個の断片に
 
 ### 2.3 数字のオーバーレイ表示
 画像パズルにおいて、タイル上に数字を重畳表示する際の実装指針です。
+- 表示仕様の詳細は[数字の仕様](../features/Number-Specification.md)を参照してください。
 - **レイヤー構造**: JavaFX の `StackPane` を使用し、下層に `ImageView`（分割された画像）、上層に `Label` または `Text`（数字）を配置します。
 - **スタイリング (CSS)**: 数字の視認性を高めるため、外部 CSS ファイルで以下のスタイルを定義します。
     - `-fx-fill` または `-fx-text-fill`: 白（または高コントラスト色）

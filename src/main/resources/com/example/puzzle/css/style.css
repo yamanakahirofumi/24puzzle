@@ -1,0 +1,21 @@
+/* Tile base style */
+.tile {
+    -fx-border-color: #555;
+    -fx-border-width: 1;
+}
+
+/* Movable tile highlighting */
+.movable-tile:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 0, 0.8), 10, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+/* Number overlay style */
+.tile-number {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, black, 2, 0, 1, 1);
+    -fx-opacity: 0.8;
+    -fx-padding: 0 5 2 0; /* Padding for bottom-right alignment */
+}

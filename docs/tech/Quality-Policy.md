@@ -6,6 +6,7 @@
 - [テストルール](Test-Rule.md)
 - [JUnit 5 利用ルール](JUnit-Rule.md)
 - [CI 設定](CI-Setting.md)
+- [コーディング規約](Coding-Convention.md)
 
 ## 基本方針
 - プロダクト価値の最大化を第一とし、「仕様の明確化」と「ユーザー価値の検証」を優先します。

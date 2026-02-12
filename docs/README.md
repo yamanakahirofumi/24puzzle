@@ -15,3 +15,4 @@
 - [JUnit 5 ルール](tech/JUnit-Rule.md): JUnit 5 を使用したテストの実装方法
 - [品質方針](tech/Quality-Policy.md): フェーズ（仕様未確定/確定）に応じた品質の考え方と到達目標
 - [配布方法](tech/Distribution-Method.md): カスタム JRE による配布パッケージの作成について
+- [コーディング規約](tech/Coding-Convention.md): クラス作成基準（record, final の使用等）について

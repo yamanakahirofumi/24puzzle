@@ -12,7 +12,7 @@
 │   ├── main
 │   │   ├── java
 │   │   │   ├── module-info.java  # モジュール定義
-│   │   │   └── com.example.puzzle
+│   │   │   └── org.hero.puzzle
 │   │   │       ├── Main.java     # エントリーポイント
 │   │   │       ├── model/        # ビジネスロジック
 │   │   │       ├── view/         # JavaFX UI コンポーネント
@@ -20,12 +20,12 @@
 │   │   │       ├── service/      # 画像処理・アルゴリズム
 │   │   │       └── util/         # ユーティリティ
 │   │   └── resources
-│   │       └── com.example.puzzle
+│   │       └── org.hero.puzzle
 │   │           ├── images/       # アイコン・デフォルト画像
 │   │           └── css/          # スタイルシート
 │   └── test
 │       └── java
-│           └── com.example.puzzle # ユニットテスト
+│           └── org.hero.puzzle # ユニットテスト
 ```
 
 ## 2. 主要クラスの責務

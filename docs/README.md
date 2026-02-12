@@ -5,6 +5,8 @@
 ## 機能・仕様
 - [ゲームルール](features/Game-Rule.md): 24-Puzzle の遊び方、操作方法、勝利条件について
 - [UI/UX 仕様](features/UI-UX-Specification.md): 画面構成とユーザーインターフェースの詳細
+- [数字の仕様](features/Number-Specification.md): 1から24の数字の定義、配置、表示に関する詳細
+- [画像読み込みの仕様](features/Image-Loading-Specification.md): 画像の加工、分割、サポート形式に関する詳細
 
 ## 技術・開発設定
 - [アーキテクチャ設計](tech/Architecture.md): システムのパッケージ構造と主要クラスの責務

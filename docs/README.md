@@ -10,7 +10,9 @@
 
 ## 技術・開発設定
 - [アーキテクチャ設計](tech/Architecture.md): システムのパッケージ構造と主要クラスの責務
-- [実装詳細](tech/Implementation-Details.md): シャッフルアルゴリズム、画像処理、ロギング等の詳細
+- [実装詳細](tech/Implementation-Details.md): シャッフルアルゴリズム、画像処理等の詳細
+- [エラーハンドリング方針](tech/Error-Handling-Policy.md): 基本方針と各ケースでの対応
+- [ロギング方針](tech/Logging-Policy.md): デバッグおよび保守のためのログ出力指針
 - [技術スタック](tech/Tech-Stack.md): 使用している言語、ライブラリ、ツールなどの情報
 - [CI 設定](tech/CI-Setting.md): GitHub Actions を利用した自動ビルドとテストの設定について
 - [テストルール](tech/Test-Rule.md): テストケース作成の一般的なガイドライン

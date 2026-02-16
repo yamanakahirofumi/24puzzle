@@ -20,3 +20,4 @@
 - [品質方針](tech/Quality-Policy.md): フェーズ（仕様未確定/確定）に応じた品質の考え方と到達目標
 - [配布方法](tech/Distribution-Method.md): カスタム JRE による配布パッケージの作成について
 - [コーディング規約](tech/Coding-Convention.md): クラス作成基準（record, final の使用等）について
+- [仕様書の書き方ルール](tech/Specification-Rule.md): 本プロジェクトにおけるドキュメント作成基準

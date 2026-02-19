@@ -1,0 +1,25 @@
+.tile {
+    -fx-background-color: #ddd;
+    -fx-border-color: #999;
+    -fx-border-width: 1;
+}
+
+.movable-tile:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 0, 0.8), 10, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.tile-number-default {
+    -fx-text-fill: #333;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.tile-number-overlay {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, black, 2, 0, 1, 1);
+    -fx-opacity: 0.7;
+    -fx-padding: 0 5 2 0; /* Positioned at bottom-right */
+}

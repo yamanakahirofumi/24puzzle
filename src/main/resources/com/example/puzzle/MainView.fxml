@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.puzzle.controller.GameController" stylesheets="@css/style.css">
+    <center>
+        <GridPane fx:id="puzzleGrid" hgap="2" vgap="2" style="-fx-background-color: #333; -fx-padding: 2;">
+            <!-- TileViews will be added here programmatically -->
+        </GridPane>
+    </center>
+    <right>
+        <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #eee; -fx-min-width: 200;">
+            <VBox spacing="5">
+                <Label text="Move Count:" style="-fx-font-weight: bold;"/>
+                <Label fx:id="moveCountLabel" text="0" style="-fx-font-size: 18px;"/>
+            </VBox>
+
+            <VBox spacing="5">
+                <Label text="Time:" style="-fx-font-weight: bold;"/>
+                <Label fx:id="timerLabel" text="00:00" style="-fx-font-size: 18px;"/>
+            </VBox>
+
+            <Separator/>
+
+            <Button text="Shuffle/Start" onAction="#handleShuffle" maxWidth="Infinity"/>
+            <Button text="Select Image" onAction="#handleSelectImage" maxWidth="Infinity"/>
+            <Button text="Reset" onAction="#handleReset" maxWidth="Infinity"/>
+
+            <CheckBox fx:id="showNumbersCheckbox" text="Show Numbers" selected="true" onAction="#handleToggleNumbers"/>
+
+            <Separator/>
+
+            <Label text="Preview:" style="-fx-font-weight: bold;"/>
+            <StackPane style="-fx-border-color: #ccc; -fx-background-color: white;">
+                <ImageView fx:id="previewImageView" fitWidth="150" fitHeight="150" preserveRatio="true"/>
+            </StackPane>
+        </VBox>
+    </right>
+</BorderPane>
